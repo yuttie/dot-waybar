@@ -46,6 +46,9 @@ window#waybar > box {
   margin: 0 0.2em;
   transition-property: color, background-color;
   transition-duration: 150ms;
+  /* Disable default styling */
+  text-shadow: none;
+  box-shadow: none;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
