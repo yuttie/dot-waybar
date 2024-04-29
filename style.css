@@ -37,7 +37,6 @@ window#waybar > box {
 }
 
 #workspaces button {
-  padding: 0 12px;
   background-color: transparent;
   color: #3a3b45;
   border: none;
