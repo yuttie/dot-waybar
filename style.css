@@ -13,8 +13,11 @@
 
 #window > label {
   font-size: 120%;
-  border-bottom: 4px solid rgba(255, 255, 255, 0.2);
-  min-width: 30em;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  border-image-slice: 1;
+  min-width: 40em;
 }
 
 #workspaces > button {
