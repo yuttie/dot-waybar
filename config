@@ -11,7 +11,7 @@
     // Modules configuration
     "hyprland/workspaces": {
         "format": "{name}",
-        "sort-by": "name"
+        "sort-by": "id"
     },
     "hyprland/window": {
     },
