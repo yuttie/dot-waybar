@@ -1,12 +1,6 @@
-* {
+#waybar {
   font-family: 'Symbols Nerd Font', 'Inter', 'IBM Plex Sans JP', 'Source Han Sans', sans-serif;
   font-size: 14px;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-}
-
-#waybar {
   background-color: rgba(255, 255, 255, 0);
   color: #ffffff;
   transition-property: background-color;
