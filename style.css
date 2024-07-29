@@ -1,50 +1,38 @@
 * {
-  font-family: 'Symbols Nerd Font', 'TeX Gyre Heros', 'IBM Plex Sans JP', 'Source Han Sans', sans-serif;
-  font-size: 20px;
+  font-family: 'Symbols Nerd Font', 'Inter', 'IBM Plex Sans JP', 'Source Han Sans', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
-window#waybar {
+#waybar {
   background-color: rgba(255, 255, 255, 0);
   color: #ffffff;
   transition-property: background-color;
   transition-duration: 500ms;
 }
 
-window#waybar.hidden {
-  opacity: 0.2;
+#waybar > box {
+  padding: 0.8em 1.4em 0 1.4em;  /* Cannot be applied to window#waybar, and therefore should be here */
 }
 
-/*
-window#waybar.empty {
+#window > label {
+  font-size: 120%;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.2);
+  min-width: 30em;
+}
+
+#workspaces > button {
   background-color: transparent;
-}
-window#waybar.solo {
-  background-color: #FFFFFF;
-}
-*/
-
-window#waybar.termite {
-  background-color: #3F3F3F;
-}
-
-window#waybar.chromium {
-  background-color: #000000;
-  border: none;
-}
-
-window#waybar > box {
-  padding: 12px 0 0 0;
-}
-
-#workspaces button {
-  background-color: transparent;
-  color: #3a3b45;
-  border: none;
-  border-radius: 1em;
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
   padding: 0.2em 0.8em;
-  margin: 0 0.2em;
+  margin-right: 0.6em;
+  min-width: 0;
   transition-property: color, background-color;
-  transition-duration: 150ms;
+  transition-duration: 200ms;
   /* Disable default styling */
   text-shadow: none;
   box-shadow: none;
@@ -73,54 +61,20 @@ window#waybar > box {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-#clock,
-#battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
-#backlight,
-#network,
-#pulseaudio,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#mpd {
+.modules-right > widget > box,
+.modules-right > widget > label {
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
-#window,
-#workspaces {
-  margin: 0 4px;
-}
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-  margin-left: 0;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
+.modules-right > widget:last-child > box,
+.modules-right > widget:last-child > label {
+  margin-left: 1em;
   margin-right: 0;
 }
 
-.modules-right > widget > label,
-.modules-right > widget > box {
-  padding: 0 20px;
-}
-
 .modules-right > widget:not(:last-child) {
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-#clock {
-}
-
-#battery {
-}
-
-#battery.charging,
-#battery.plugged {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 @keyframes blink {
@@ -140,53 +94,16 @@ to {
   animation-direction: alternate;
 }
 
-label:focus {
-}
-
-#cpu {
-}
-
-#memory {
-}
-
-#disk {
-}
-
-#backlight {
-}
-
-#network {
-}
-
 #network.disconnected {
   color: #f53c3c;
-}
-
-#pulseaudio {
 }
 
 #pulseaudio.muted {
   background-color: rgba(0, 0, 0, 0.15);
 }
 
-#custom-media {
-  min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-}
-
-#custom-media.custom-vlc {
-}
-
-#temperature {
-}
-
 #temperature.critical {
   background-color: #eb4d4b;
-}
-
-#tray {
 }
 
 #tray > .passive {
@@ -204,14 +121,4 @@ label:focus {
 
 #idle_inhibitor.activated {
   color: #ffffff;
-}
-
-#keyboard-state {
-}
-
-#keyboard-state > label {
-}
-
-#keyboard-state > label.locked {
-  background-color: rgba(0, 0, 0, 0.2);
 }
