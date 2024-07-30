@@ -1,7 +1,7 @@
 #waybar {
   /* Note that numbers should have a fixed width for clock */
   font-family: 'Symbols Nerd Font', 'TeX Gyre Heros', 'IBM Plex Sans JP', 'Source Han Sans', sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   background-color: rgba(255, 255, 255, 0);
   color: #ffffff;
   transition-property: background-color;
