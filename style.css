@@ -110,10 +110,10 @@ to {
   background-color: #eb4d4b;
 }
 
-#idle_inhibitor {
-  color: rgba(255, 255, 255, 0.3);
+#idle_inhibitor.deactivated {
+  color: rgba(192, 192, 192, 1);
 }
 
 #idle_inhibitor.activated {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
 }
