@@ -2,53 +2,51 @@
   /* Note that numbers should have a fixed width for clock */
   font-family: 'Symbols Nerd Font', 'TeX Gyre Heros', 'IBM Plex Sans JP', 'Source Han Sans', sans-serif;
   font-size: 20px;
-  background-color: rgba(255, 255, 255, 0);
-  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 1000px;
   transition-property: background-color;
   transition-duration: 500ms;
 }
 
 #waybar > box {
-  padding: 0.8em 1.4em 0 1.4em;  /* Cannot be applied to window#waybar, and therefore should be here */
+  /* Cannot be applied to window#waybar, and therefore should be here */
+  padding: 0 1.6em;
 }
 
 #window > label {
-  border-bottom-width: 4px;
-  border-bottom-style: solid;
-  border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
-  border-image-slice: 1;
   min-width: 40em;
 }
 
 #workspaces > button {
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  padding: 0.25em 0.5em;
-  margin-right: 0.6em;
-  min-width: 0;
-  transition-property: color, background-color;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 1);
+  border-radius: 0;
+  margin: 0;
+  padding: 0.6em 0.4em;
+  transition-property: background-color, opacity;
   transition-duration: 200ms;
+  opacity: 0.5;
   /* Disable default styling */
-  text-shadow: none;
   box-shadow: none;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0.7;
 }
 
 #workspaces button.focused,
 #workspaces button.active,
 #workspaces button.visible {
-  background-color: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 1;
 }
 
 #workspaces button.urgent {
-  background-color: #eb4d4b;
+  background-color: rgba(235, 77, 75, 0.2);
 }
 
 #mode {
@@ -71,7 +69,7 @@
 }
 
 .modules-right > widget:not(:last-child) {
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 @keyframes blink {
