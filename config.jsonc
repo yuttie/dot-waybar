@@ -71,9 +71,21 @@
     },
     "clock": {
         "interval": 1,
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "tooltip-format": "<tt>{calendar}</tt>",
         "format": "{:%Y-%m-%d %a %H:%M:%S}",
-        "format-alt": "{:%Y-%m-%d}"
+        "calendar": {
+            "mode"          : "year",
+            "mode-mon-col"  : 3,
+            "weeks-pos"     : "left",
+            "on-scroll"     : 1,
+            "format": {
+                "months":     "<span color='#33ccff'><b>{}</b></span>",
+                "days":       "<span color='#ffffff'><b>{}</b></span>",
+                "weeks":      "<span color='#33ff7a'><b>W{}</b></span>",
+                "weekdays":   "<span color='#ffad33'><b>{}</b></span>",
+                "today":      "<span color='#ff3370'><b><u>{}</u></b></span>",
+            },
+        },
     },
     "cpu": {
         "format": " {usage}% ({avg_frequency}GHz)",
