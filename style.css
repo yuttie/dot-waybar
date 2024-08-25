@@ -1,6 +1,5 @@
 #waybar {
-  /* Note that numbers should have a fixed width for clock */
-  font-family: 'Symbols Nerd Font', 'TeX Gyre Heros', 'IBM Plex Sans JP', 'Source Han Sans', sans-serif;
+  font-family: 'Symbols Nerd Font', 'Inter', 'IBM Plex Sans JP', 'Source Han Sans', sans-serif;
   font-size: 20px;
   background-color: rgba(255, 255, 255, 0.15);
   color: rgba(255, 255, 255, 1);
@@ -70,6 +69,11 @@
 
 .modules-right > widget:not(:last-child) {
   border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#clock {
+  /* Note that numbers should have a fixed width for clock */
+  font-family: 'TeX Gyre Heros', sans-serif;
 }
 
 @keyframes blink {
