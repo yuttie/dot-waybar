@@ -9,7 +9,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "battery#bat2", "tray"],
+    "modules-right": ["custom/group-lock", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "battery#bat2", "tray"],
     // Modules configuration
     "hyprland/workspaces": {
         "format": "{name}",
@@ -19,6 +19,9 @@
     },
     "sway/workspaces": {
         "warp-on-scroll": true
+    },
+    "custom/group-lock": {
+        "exec": "~/.config/waybar/custom-hyprland-lockgroups.sh",
     },
     "keyboard-state": {
         "numlock": true,
