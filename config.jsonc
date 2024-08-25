@@ -76,11 +76,13 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
-        "format": "{usage}% ",
-        "tooltip": false
+        "format": " {usage}% ({avg_frequency}GHz)",
+        "on-click": "gnome-system-monitor --show-resources-tab",
     },
     "memory": {
-        "format": "{}% "
+        "format": " {percentage}% ({swapPercentage}%)",
+        "tooltip-format": "Memory: {used}GiB / {total}GiB, Swap: {swapUsed}GiB / {swapTotal}GiB",
+        "on-click": "gnome-system-monitor --show-resources-tab",
     },
     "temperature": {
         // "thermal-zone": 2,
