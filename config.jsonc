@@ -114,13 +114,13 @@
         "bat": "BAT2"
     },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-ethernet": "󰈁",
+        "format-wifi": " {essid} ({signalStrength}%)",
+        "format-disconnected": "󰈂",
+        "format-linked": "󰈁 (No IP)",
+        "format-alt": " {bandwidthUpBytes} /  {bandwidthDownBytes}",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr} via {gwaddr}",
+        "tooltip-format-disconnected": "Disconnected",
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
