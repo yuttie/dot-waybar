@@ -5,7 +5,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/group-lock", "idle_inhibitor", "wireplumber", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "battery#bat2", "tray"],
+    "modules-right": ["custom/group-lock", "idle_inhibitor", "wireplumber", "network", "cpu", "memory", "temperature", "backlight", "battery", "battery#bat2", "tray"],
     // Modules configuration
     "hyprland/workspaces": {
         "format": "{name}",
@@ -15,15 +15,6 @@
     },
     "custom/group-lock": {
         "exec": "~/.config/waybar/custom-hyprland-lockgroups.sh",
-    },
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
     },
     "idle_inhibitor": {
         "format": "{icon}",
