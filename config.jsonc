@@ -45,7 +45,7 @@
     "clock": {
         "interval": 1,
         "tooltip-format": "<tt>{calendar}</tt>",
-        "format": "{:%Y-%m-%d %a %H:%M:%S}",
+        "format": "<span font_features='tnum'>{:%Y-%m-%d %a %H:%M:%S}</span>",
         "calendar": {
             "mode"          : "year",
             "mode-mon-col"  : 3,

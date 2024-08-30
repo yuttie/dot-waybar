@@ -71,11 +71,6 @@
   border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-#clock {
-  /* Note that numbers should have a fixed width for clock */
-  font-family: 'TeX Gyre Heros', sans-serif;
-}
-
 @keyframes blink {
 to {
   background-color: #ffffff;
