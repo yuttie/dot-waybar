@@ -92,12 +92,12 @@
     },
     "cpu": {
         "format": " {usage}% ({avg_frequency}GHz)",
-        "on-click": "gnome-system-monitor --show-resources-tab",
+        "on-click-middle": "gnome-system-monitor --show-resources-tab",
     },
     "memory": {
         "format": " {percentage}% ({swapPercentage}%)",
         "tooltip-format": "Memory: {used}GiB / {total}GiB, Swap: {swapUsed}GiB / {swapTotal}GiB",
-        "on-click": "gnome-system-monitor --show-resources-tab",
+        "on-click-middle": "gnome-system-monitor --show-resources-tab",
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -143,8 +143,8 @@
         "format": "{icon} {volume}%",
         "format-muted": " ",
         "format-icons": ["", "", ""],
-        "on-click": "pavucontrol",
-        "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click-middle": "pavucontrol",
     },
 }
 // vim: ft=jsonc
