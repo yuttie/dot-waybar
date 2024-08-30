@@ -61,10 +61,12 @@
         },
     },
     "cpu": {
+        "interval": 2,
         "format": " {usage}% ({avg_frequency}GHz)",
         "on-click-middle": "gnome-system-monitor --show-resources-tab",
     },
     "memory": {
+        "interval": 5,
         "format": " {percentage}% ({swapPercentage}%)",
         "tooltip-format": "Memory: {used}GiB / {total}GiB, Swap: {swapUsed}GiB / {swapTotal}GiB",
         "on-click-middle": "gnome-system-monitor --show-resources-tab",
