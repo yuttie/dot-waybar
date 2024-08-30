@@ -9,7 +9,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/group-lock", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "battery#bat2", "tray"],
+    "modules-right": ["custom/group-lock", "idle_inhibitor", "wireplumber", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "battery#bat2", "tray"],
     // Modules configuration
     "hyprland/workspaces": {
         "format": "{name}",
@@ -139,18 +139,10 @@
         "tooltip-format": "{ifname}: {ipaddr}/{cidr} via {gwaddr}",
         "tooltip-format-disconnected": "Disconnected",
     },
-    "pulseaudio": {
-        "format": "{icon} {volume}% {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": " {volume}%",
-        "format-source-muted": "",
-        "format-bluetooth": " {icon} {volume}% {format_source}",
-        "format-icons": {
-            "default": ["", "", ""],
-            "headphone": "",
-            "hdmi": "󰡁",
-            "headset": "",
-        },
+    "wireplumber": {
+        "format": "{icon} {volume}%",
+        "format-muted": " ",
+        "format-icons": ["", "", ""],
         "on-click": "pavucontrol",
         "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
     },
