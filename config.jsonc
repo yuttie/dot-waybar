@@ -62,12 +62,12 @@
     },
     "cpu": {
         "interval": 2,
-        "format": " {usage}% ({avg_frequency}GHz)",
+        "format": "<span font_features='tnum'> {usage}% ({avg_frequency}GHz)</span>",
         "on-click-middle": "gnome-system-monitor --show-resources-tab",
     },
     "memory": {
         "interval": 5,
-        "format": " {percentage}% ({swapPercentage}%)",
+        "format": "<span font_features='tnum'> {percentage}% ({swapPercentage}%)</span>",
         "tooltip-format": "Memory: {used}GiB / {total}GiB, Swap: {swapUsed}GiB / {swapTotal}GiB",
         "on-click-middle": "gnome-system-monitor --show-resources-tab",
     },
@@ -79,8 +79,8 @@
         "input-filename": "temp1_input",
         "critical-threshold": 90,
         "interval": 5,
-        "format": "{icon} {temperatureC}°C",
-        "format-critical": "<span color='#ff7f7f'>{icon} {temperatureC}°C</span>",
+        "format": "<span font_features='tnum'>{icon} {temperatureC}°C</span>",
+        "format-critical": "<span font_features='tnum' color='#ff7f7f'>{icon} {temperatureC}°C</span>",
         "format-icons": ["", "", "", "", ""],
     },
     "backlight": {
@@ -116,7 +116,7 @@
         "tooltip-format-disconnected": "Disconnected",
     },
     "wireplumber": {
-        "format": "{icon} {volume}%",
+        "format": "<span font_features='tnum'>{icon} {volume}%</span>",
         "format-muted": " ",
         "format-icons": ["", "", ""],
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
