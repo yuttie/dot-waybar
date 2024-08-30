@@ -13,9 +13,6 @@
     },
     "hyprland/window": {
     },
-    "sway/workspaces": {
-        "warp-on-scroll": true
-    },
     "custom/group-lock": {
         "exec": "~/.config/waybar/custom-hyprland-lockgroups.sh",
     },
@@ -27,9 +24,6 @@
             "locked": "",
             "unlocked": ""
         }
-    },
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
     },
     "idle_inhibitor": {
         "format": "{icon}",
