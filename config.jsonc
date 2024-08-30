@@ -66,19 +66,19 @@
         "on-click-middle": "gnome-system-monitor --show-resources-tab",
     },
     "memory": {
-        "interval": 5,
+        "interval": 2,
         "format": "<span font_features='tnum'> {percentage}% ({swapPercentage}%)</span>",
         "tooltip-format": "Memory: {used}GiB / {total}GiB, Swap: {swapUsed}GiB / {swapTotal}GiB",
         "on-click-middle": "gnome-system-monitor --show-resources-tab",
     },
     "temperature": {
+        "interval": 2,
         "hwmon-path-abs": [
             "/sys/devices/pci0000:00/0000:00:18.3/hwmon",
             "/sys/devices/platform/coretemp.0/hwmon",
         ],
         "input-filename": "temp1_input",
         "critical-threshold": 90,
-        "interval": 5,
         "format": "<span font_features='tnum'>{icon} {temperatureC}°C</span>",
         "format-critical": "<span font_features='tnum' color='#ff7f7f'>{icon} {temperatureC}°C</span>",
         "format-icons": ["", "", "", "", ""],
