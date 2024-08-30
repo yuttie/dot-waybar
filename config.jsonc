@@ -5,7 +5,19 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/group-lock", "idle_inhibitor", "wireplumber", "network", "cpu", "memory", "temperature", "backlight", "battery", "battery#bat2", "tray"],
+    "modules-right": [
+        "custom/group-lock",
+        "cpu",
+        "memory",
+        "temperature",
+        "idle_inhibitor",
+        "wireplumber",
+        "network",
+        "backlight",
+        "battery",
+        "battery#bat2",
+        "tray",
+    ],
     // Modules configuration
     "hyprland/workspaces": {
         "format": "{name}",
