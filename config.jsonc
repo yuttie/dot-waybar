@@ -106,6 +106,7 @@
         "bat": "BAT2"
     },
     "network": {
+        "interval": 2,
         "format-ethernet": "󰈁",
         "format-wifi": " {essid} ({signalStrength}%)",
         "format-disconnected": "󰈂",
