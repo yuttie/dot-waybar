@@ -21,7 +21,9 @@
     // Modules configuration
     "hyprland/workspaces": {
         "format": "{name}",
-        "sort-by": "id"
+        "sort-by": "id",
+        "on-scroll-up": "hyprctl dispatch workspace m-1",
+        "on-scroll-down": "hyprctl dispatch workspace m+1"
     },
     "hyprland/window": {
     },
