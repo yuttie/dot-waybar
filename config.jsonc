@@ -26,6 +26,7 @@
         "on-scroll-down": "hyprctl dispatch workspace m+1"
     },
     "hyprland/window": {
+        "separate-outputs": true,
     },
     "custom/group-lock": {
         "exec": "~/.config/waybar/custom-hyprland-lockgroups.sh",
