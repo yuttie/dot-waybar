@@ -70,6 +70,10 @@
         "format": "<span font_features='tnum'> {percentage}% ({swapPercentage}%)</span>",
         "tooltip-format": "Memory: {used}GiB / {total}GiB, Swap: {swapUsed}GiB / {swapTotal}GiB",
         "on-click-middle": "gnome-system-monitor --show-resources-tab",
+        "states": {
+            "warning": 80,
+            "critical": 90,
+        },
     },
     "temperature": {
         "interval": 2,
@@ -91,9 +95,8 @@
     },
     "battery": {
         "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
+            "warning": 15,
+            "critical": 5
         },
         "format": "{capacity}% {icon}",
         "format-charging": "{capacity}% ",

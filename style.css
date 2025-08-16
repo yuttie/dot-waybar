@@ -72,18 +72,42 @@
 }
 
 @keyframes blink {
-to {
-  background-color: #ffffff;
-  color: #000000;
+    from {
+        color: rgba(255, 255, 255, 1);
+    }
+    to {
+        color: rgba(255, 0, 0, 1);
+    }
 }
+
+#memory.warning {
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#memory.critical {
+  animation-name: blink;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#battery.warning:not(.charging) {
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 #battery.critical:not(.charging) {
-  background-color: #f53c3c;
-  color: #ffffff;
   animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
