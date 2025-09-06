@@ -111,7 +111,7 @@
     "backlight": {
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
-        "on-scroll-down": "brightnessctl set -1%",
+        "on-scroll-down": "brightnessctl set 1%-",
         "on-scroll-up": "brightnessctl set +1%"
     },
     "battery": {
