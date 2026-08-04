@@ -59,18 +59,14 @@
 
 .modules-right > widget > box,
 .modules-right > widget > label {
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .modules-right > widget:last-child > box,
 .modules-right > widget:last-child > label {
-  margin-left: 1em;
+  margin-left: 0.5em;
   margin-right: 0;
-}
-
-.modules-right > widget:not(:last-child) {
-  border-right: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 @keyframes blink {
