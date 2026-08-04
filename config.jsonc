@@ -132,11 +132,13 @@
     "network": {
         "interval": 2,
         "format-ethernet": "<big>󰈁</big>",
-        "format-wifi": " {essid} ({signalStrength}%)",
-        "format-disconnected": "<big>󰈂</big>",
+        "format-wifi": " ",
         "format-linked": "<big>󰈁</big> (No IP)",
+        "format-disconnected": "<big>󰈂</big>",
+        "format-disabled": "<big>󰀝</big>",
         "format-alt": " {bandwidthDownBytes} /  {bandwidthUpBytes}",
-        "tooltip-format": "{ifname}: {ipaddr}/{cidr} via {gwaddr}",
+        "tooltip-format-ethernet": "{ifname}\n{ipaddr}/{cidr} via {gwaddr}",
+        "tooltip-format-wifi": "<b>{essid} ({signalStrength}%)</b>\n{ifname}\n{ipaddr}/{cidr} via {gwaddr}",
         "tooltip-format-disconnected": "Disconnected",
     },
     "wireplumber": {
