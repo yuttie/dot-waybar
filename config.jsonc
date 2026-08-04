@@ -83,7 +83,8 @@
     },
     "cpu": {
         "interval": 2,
-        "format": "<span font_features='tnum'> {usage}% ({avg_frequency}GHz)</span>",
+        "format": "<span font_features='tnum'> {usage}%</span>",
+        "format-alt": "<span font_features='tnum'> {usage}% ({min_frequency}GHz/{avg_frequency}GHz/{max_frequency}GHz)</span>",
         "on-click-middle": "gnome-system-monitor --show-resources-tab",
     },
     "memory": {
