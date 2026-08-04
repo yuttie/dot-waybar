@@ -10,14 +10,14 @@
         "custom/group-lock",
         "cpu",
         "memory",
-        "network",
         "temperature",
         "wireplumber",
         "backlight",
         "battery",
         "battery#bat2",
-        "tray",
+        "network",
         "custom/notification",
+        "tray",
     ],
     // Modules configuration
     "hyprland/workspaces": {
