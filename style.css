@@ -27,8 +27,6 @@
   font-weight: bold;
   margin: 0;
   padding: 0.45em 0.3em;
-  transition-property: background-color, opacity;
-  transition-duration: 200ms;
   opacity: 0.4;
   /* Disable default styling */
   box-shadow: none;
