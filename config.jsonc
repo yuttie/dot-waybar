@@ -58,7 +58,6 @@
             "activated": "",
             "deactivated": ""
         },
-        "timeout": 30
     },
     "tray": {
         "icon-size": 16,
