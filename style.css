@@ -1,3 +1,5 @@
+/* Reference: https://docs.gtk.org/gtk3/css-properties.html */
+
 #waybar {
   font-family: 'Symbols Nerd Font', 'Inter', 'IBM Plex Sans JP', 'Source Han Sans', sans-serif;
   font-size: 10pt;
