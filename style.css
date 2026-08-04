@@ -24,11 +24,12 @@
   background-color: rgba(255, 255, 255, 0);
   color: rgba(255, 255, 255, 1);
   border-radius: 0;
+  font-weight: bold;
   margin: 0;
-  padding: 0.6em 0.4em;
+  padding: 0.45em 0.3em;
   transition-property: background-color, opacity;
   transition-duration: 200ms;
-  opacity: 0.5;
+  opacity: 0.4;
   /* Disable default styling */
   box-shadow: none;
 }
