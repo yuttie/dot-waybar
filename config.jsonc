@@ -6,6 +6,7 @@
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
     "modules-right": [
+        "privacy",
         "idle_inhibitor",
         "custom/group-lock",
         "cpu",
@@ -148,6 +149,23 @@
         "format-icons": ["", "", ""],
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "on-click-middle": "pavucontrol",
+    },
+    "privacy": {
+        "icon-spacing": 4,
+        "icon-size": 16,
+        "transition-duration": 250,
+        "modules": [
+            {
+                "type": "screenshare",
+                "tooltip": true,
+                "tooltip-icon-size": 24
+            },
+            {
+                "type": "audio-in",
+                "tooltip": true,
+                "tooltip-icon-size": 24
+            },
+        ],
     },
 }
 // vim: ft=jsonc

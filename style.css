@@ -129,3 +129,7 @@
 #idle_inhibitor.activated {
   color: rgba(255, 255, 255, 1);
 }
+
+#privacy-item {
+    color: #eb4d4b;
+}
