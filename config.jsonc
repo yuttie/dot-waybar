@@ -24,8 +24,8 @@
     "hyprland/workspaces": {
         "format": "{name}",
         "sort-by": "name",
-        "on-scroll-up": "hyprctl dispatch workspace m-1",
-        "on-scroll-down": "hyprctl dispatch workspace m+1"
+        "on-scroll-up": "hyprctl dispatch 'require(\"lib.workspace\").focus_adjacent(-1)'",
+        "on-scroll-down": "hyprctl dispatch 'require(\"lib.workspace\").focus_adjacent(1)'"
     },
     "hyprland/window": {
         "separate-outputs": true,
