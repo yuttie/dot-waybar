@@ -3,8 +3,8 @@
     "spacing": 3, // Gaps between modules (4px)
     "reload_style_on_change": true,
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock"],
+    "modules-left": ["clock"],
+    "modules-center": ["hyprland/workspaces"],
     "modules-right": [
         "privacy",
         "idle_inhibitor",
@@ -24,6 +24,7 @@
     "hyprland/workspaces": {
         "format": "{name}",
         "sort-by": "name",
+        "active-only": true,
         "on-scroll-up": "hyprctl dispatch 'require(\"lib.workspace\").focus_adjacent(-1)'",
         "on-scroll-down": "hyprctl dispatch 'require(\"lib.workspace\").focus_adjacent(1)'"
     },
@@ -67,7 +68,7 @@
     "clock": {
         "interval": 1,
         "tooltip-format": "<tt>{calendar}</tt>",
-        "format": "<span weight='semibold' font_features='tnum'>{:%a %b %e %H:%M:%S}</span>",
+        "format": "<span font_features='tnum'>{:%a %b %e %H:%M:%S}</span>",
         "calendar": {
             "mode"          : "year",
             "mode-mon-col"  : 3,
