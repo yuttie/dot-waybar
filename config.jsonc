@@ -85,13 +85,13 @@
     },
     "cpu": {
         "interval": 2,
-        "format": "<span font_features='tnum'> {usage}%</span>",
-        "format-alt": "<span font_features='tnum'> {usage}% ({min_frequency}GHz/{avg_frequency}GHz/{max_frequency}GHz)</span>",
+        "format": "<span font_features='tnum'> {usage:02d}%</span>",
+        "format-alt": "<span font_features='tnum'> {usage:02d}% ({min_frequency}GHz/{avg_frequency}GHz/{max_frequency}GHz)</span>",
         "on-click-middle": "gnome-system-monitor --show-resources-tab",
     },
     "memory": {
         "interval": 2,
-        "format": "<span font_features='tnum'> {percentage}% ({swapPercentage}%)</span>",
+        "format": "<span font_features='tnum'> {percentage:02d}% ({swapPercentage:02d}%)</span>",
         "tooltip-format": "Memory: {used}GiB / {total}GiB, Swap: {swapUsed}GiB / {swapTotal}GiB",
         "on-click-middle": "gnome-system-monitor --show-resources-tab",
         "states": {
@@ -112,7 +112,7 @@
         "format-icons": ["", "", "", "", ""],
     },
     "backlight": {
-        "format": "{icon} {percent}%",
+        "format": "{icon} {percent:02d}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
         "on-scroll-down": "brightnessctl set 1%-",
         "on-scroll-up": "brightnessctl set +1%"
@@ -122,10 +122,10 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "<big>{icon}</big> {capacity}%",
-        "format-charging": "<big>󱐋</big> <big>{icon}</big> {capacity}%",
-        "format-full": "<big>{icon}</big> {capacity}%",
-        "format-plugged": "<big>󰚥</big> <big>{icon}</big> {capacity}%",  // full and plugged in
+        "format": "<big>{icon}</big> {capacity:02d}%",
+        "format-charging": "<big>󱐋</big> <big>{icon}</big> {capacity:02d}%",
+        "format-full": "<big>{icon}</big> {capacity:02d}%",
+        "format-plugged": "<big>󰚥</big> <big>{icon}</big> {capacity:02d}%",  // full and plugged in
         "format-alt": "<big>{icon}</big> {time}",
         "format-icons": ["", "", "", "", ""]
     },
@@ -141,11 +141,11 @@
         "format-disabled": "<big>󰀝</big>",
         "format-alt": " {bandwidthDownBytes} /  {bandwidthUpBytes}",
         "tooltip-format-ethernet": "{ifname}\n{ipaddr}/{cidr} via {gwaddr}",
-        "tooltip-format-wifi": "<b>{essid} ({signalStrength}%)</b>\n{ifname}\n{ipaddr}/{cidr} via {gwaddr}",
+        "tooltip-format-wifi": "<b>{essid} ({signalStrength:02d}%)</b>\n{ifname}\n{ipaddr}/{cidr} via {gwaddr}",
         "tooltip-format-disconnected": "Disconnected",
     },
     "wireplumber": {
-        "format": "<span font_features='tnum'>{icon} {volume}%</span>",
+        "format": "<span font_features='tnum'>{icon} {volume:02d}%</span>",
         "format-muted": " ",
         "format-icons": ["", "", ""],
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
