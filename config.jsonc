@@ -3,12 +3,7 @@
     "spacing": 0, // Gaps between modules
     "reload_style_on_change": true,
     // Choose the order of the modules
-    "modules-left": ["clock"],
-    "modules-center": ["hyprland/workspaces"],
-    "modules-right": [
-        "privacy",
-        "idle_inhibitor",
-        "custom/group-lock",
+    "modules-left": [
         "cpu",
         "memory",
         "temperature",
@@ -17,8 +12,14 @@
         "battery",
         "battery#bat2",
         "network",
+    ],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": [
+        "privacy",
+        "idle_inhibitor",
         "custom/notification",
         "tray",
+        "clock",
     ],
     // Modules configuration
     "hyprland/workspaces": {
