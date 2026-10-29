@@ -13,7 +13,9 @@
 
 #waybar > box {
   /* Cannot be applied to window#waybar, and therefore should be here */
-  padding: 0 1.6em;
+  padding: 0 0.5em;
+  border-radius: 12px;
+  background-color: transparent;
 }
 
 #window > label {
@@ -49,18 +51,15 @@
   border-left: 1px solid rgba(255, 255, 255, 0.15);
 }
 
+.modules-left > widget > box,
+.modules-left > widget > label {
+  margin-left: 1em;
+}
+
 .modules-right > widget > box,
 .modules-right > widget > label {
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  margin-right: 1em;
 }
-
-.modules-right > widget:last-child > box,
-.modules-right > widget:last-child > label {
-  margin-left: 0.5em;
-  margin-right: 0;
-}
-
 @keyframes blink {
     from {
         color: rgba(255, 255, 255, 1);

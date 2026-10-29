@@ -1,6 +1,6 @@
 {
     "margin": "12 12 0 12",
-    "spacing": 3, // Gaps between modules (4px)
+    "spacing": 0, // Gaps between modules
     "reload_style_on_change": true,
     // Choose the order of the modules
     "modules-left": ["clock"],
